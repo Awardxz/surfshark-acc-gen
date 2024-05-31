@@ -1,0 +1,16 @@
+{
+  "name": "surfshark-acc-gen",
+  "version": "1.0.0",
+  "description": "surfshark account generator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "puppeteer": "^22.10.0"
+  }
+}
