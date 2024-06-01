@@ -24,7 +24,7 @@ This project generates a Temporary SurfShark account using Puppeteer to automate
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/surfshark-account-generator.git
+    git clone https://github.com/Awardxz/surfshark-account-generator.git
     cd surfshark-account-generator
     ```
 
