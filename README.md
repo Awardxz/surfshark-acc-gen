@@ -6,7 +6,7 @@
 
 [![Supported by Award](https://img.shields.io/badge/Supported%20by-Award-blue)](https://github.com/Awardxz)
 
-This project generates a SurfShark account using the Puppeteer npm library to automate user interactions.
+This project generates a Temporary SurfShark account using Puppeteer to automate user interactions.
 
 ## Features
 
@@ -17,6 +17,7 @@ This project generates a SurfShark account using the Puppeteer npm library to au
 
 - Node.js installed
 - npm (Node Package Manager) installed
+- Puppeteer
 
 ## Installation
 
