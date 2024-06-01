@@ -50,7 +50,7 @@ This project generates a SurfShark account using the Puppeteer npm library to au
 
 ## Example Output
 
-![Example Output]([path/to/your/example-output.png](https://raw.githubusercontent.com/Awardxz/surfshark-acc-gen/main/images-example/example.png?token=GHSAT0AAAAAACMF2E7TUTJFPCKUJ4DMFXNAZS3CJLQ))
+![Example Output]((https://raw.githubusercontent.com/Awardxz/surfshark-acc-gen/main/images-example/example.png?token=GHSAT0AAAAAACMF2E7TUTJFPCKUJ4DMFXNAZS3CJLQ))
 
 ## Contributing
 
