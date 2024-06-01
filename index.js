@@ -103,5 +103,6 @@ setTimeout(() => {
   browser.close();
 },3000)
 console.clear();
-console.log(`Email is ${email} and the password is ${password}`);
+console.log(`Email: ${email}`);
+console.log(`Password: ${password}`)
 })();
