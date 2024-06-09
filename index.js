@@ -5,6 +5,10 @@ const puppeteer = require("puppeteer");
 
   const browser = await puppeteer.launch({ headless: false });
   const emailPage = await browser.newPage();
+  const customUA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36';
+ 
+  // Set custom user agent
+  await emailPage.setUserAgent(customUA);
   
   await emailPage.goto("https://temp-mail.io/en");
   
@@ -17,8 +21,8 @@ const puppeteer = require("puppeteer");
   console.log(email);
   
   const page = await browser.newPage();
-  await page.goto("https://order.surfshark.com/checkout?frequency=24&slug=one");
-  
+  await page.goto("https://order.surfshark.com/?frequency=24&slug=incogni");
+  await page.setUserAgent(customUA);
   console.log("Going to Website");
   
   await page.setViewport({ width: 1080, height: 1024 });
