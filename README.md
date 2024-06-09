@@ -6,7 +6,7 @@
 
 [![Supported by Award](https://img.shields.io/badge/Supported%20by-Award-blue)](https://github.com/Awardxz)
 
-This project generates a SurfShark account using the Puppeteer npm library to automate user interactions.
+This project generates a Temporary SurfShark account using Puppeteer to automate user interactions.
 
 ## Features
 
@@ -17,13 +17,14 @@ This project generates a SurfShark account using the Puppeteer npm library to au
 
 - Node.js installed
 - npm (Node Package Manager) installed
+- Puppeteer
 
 ## Installation
 
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/surfshark-account-generator.git
+    git clone https://github.com/Awardxz/surfshark-account-generator.git
     cd surfshark-account-generator
     ```
 
@@ -50,11 +51,7 @@ This project generates a SurfShark account using the Puppeteer npm library to au
 
 ## Example Output
 
-![Example Output](path/to/your/example-output.png)
-
-## Screenshot
-
-![Screenshot of Terminal Output](path/to/your/screenshot.png)
+![Example Output](https://raw.githubusercontent.com/Awardxz/surfshark-acc-gen/main/images-example/example.png?token=GHSAT0AAAAAACMF2E7TUTJFPCKUJ4DMFXNAZS3CJLQ)
 
 ## Contributing
 
