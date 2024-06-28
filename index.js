@@ -3,7 +3,7 @@ const puppeteer = require("puppeteer");
 (async () => {
   const password = "WaledGamer123!";
 
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: 'new' });
   const emailPage = await browser.newPage();
   const customUA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36';
  
@@ -12,7 +12,7 @@ const puppeteer = require("puppeteer");
   
   await emailPage.goto("https://temp-mail.io/en");
   
-  await emailPage.waitForSelector("html body div#__tempmail div#__layout div.wrapper header.header div.email div.email__wrapper div.email__input-wrapper input#email.email__input");
+  await emailPage.waitForSelector("div#__layout div.wrapper header.header div.email div.email__wrapper div.email__input-wrapper input#email.email__input");
   
   const email = await emailPage.evaluate(() => {
       let inputElement = document.querySelector('#email');
@@ -21,7 +21,7 @@ const puppeteer = require("puppeteer");
   console.log(email);
   
   const page = await browser.newPage();
-  await page.goto("https://order.surfshark.com/?frequency=24&slug=incogni");
+  await page.goto("https://order.surfshark.com/?frequency=24");
   await page.setUserAgent(customUA);
   console.log("Going to Website");
   
@@ -36,7 +36,7 @@ const puppeteer = require("puppeteer");
   
   console.log("Picking Crypto");
   
-  const payment = "#root > div.lLyrv > div.bj21b > div > div.Ewm0n > div.XgKPH > div.dFvXQ > div.KolGQ > div > div.wT2mk.tOuu9 > div.Wfune.tOuu9 > div > div.g2nAY > button";
+  const payment = "div.lLyrv > div.bj21b > div > div.Ewm0n > div.XgKPH > div.dFvXQ > div.KolGQ > div > div.wT2mk.tOuu9 > div.Wfune.tOuu9 > div > div.g2nAY > button";
   await page.waitForSelector(payment);
   await page.click(payment);
   
@@ -62,8 +62,8 @@ const puppeteer = require("puppeteer");
   const passwordPage = await browser.newPage();
   await passwordPage.goto("https://my.surfshark.com/auth/reset");
   
-  await passwordPage.waitForSelector("html.notranslate body div#root div.lertL div.zVuif div#login-content.btnA5 div.ira6n div.hQjhW.cGoR9 div.E_enA div.Pq283 form.z85m3 div.WSbPR div.FhOcs.shbyo div.TZwqa input.YoSuD.Zswp6");
-  await passwordPage.type("html.notranslate body div#root div.lertL div.zVuif div#login-content.btnA5 div.ira6n div.hQjhW.cGoR9 div.E_enA div.Pq283 form.z85m3 div.WSbPR div.FhOcs.shbyo div.TZwqa input.YoSuD.Zswp6", email);
+  await passwordPage.waitForSelector("body div#root div.lertL div.zVuif div#login-content.btnA5 div.ira6n div.hQjhW.cGoR9 div.E_enA div.Pq283 form.z85m3 div.WSbPR div.FhOcs.shbyo div.TZwqa input.YoSuD.Zswp6");
+  await passwordPage.type("body div#root div.lertL div.zVuif div#login-content.btnA5 div.ira6n div.hQjhW.cGoR9 div.E_enA div.Pq283 form.z85m3 div.WSbPR div.FhOcs.shbyo div.TZwqa input.YoSuD.Zswp6", email);
   
   console.log("Adding Password");
   
@@ -76,7 +76,7 @@ const puppeteer = require("puppeteer");
   console.log("Password Resetting");
   setTimeout(() => {
       emailPage.bringToFront();
-  }, 600);
+  }, 900);
   
   await emailPage.waitForSelector(".message__title");
   await emailPage.click(".message__title");
