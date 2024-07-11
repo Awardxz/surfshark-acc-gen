@@ -1,9 +1,13 @@
-const puppeteer = require("puppeteer");
+const puppeteer = require('puppeteer-extra')
+
+// Add stealth plugin and use defaults (all tricks to hide puppeteer usage)
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
+puppeteer.use(StealthPlugin());
 
 (async () => {
   const password = "WaledGamer123!";
 
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await puppeteer.launch({ headless: false });
   const emailPage = await browser.newPage();
   const customUA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36';
  
@@ -41,19 +45,22 @@ const puppeteer = require("puppeteer");
   await page.click(payment);
   
   console.log("Selecting Payment");
-  
+
   const cryptoPayment = ".e7kd91g0 > label:nth-child(1) > span:nth-child(2) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)";
   await page.waitForSelector(cryptoPayment);
   await page.click(cryptoPayment);
   
   console.log("Selecting Bitcoin");
   
-  const finishPayment = ".css-8o7dtg";
+  const finishPayment = "label[data-test='Bitcoin-currency']";
   await page.waitForSelector(finishPayment);
   await page.click(finishPayment);
   
   console.log("Finishing Payment");
-  
+  const clickButton = "#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-1h7rhxr.e1sjwxkc4 > div > div.css-8o7dtg.e1sjwxkc2 > div > button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.e10oj9ve5.css-kdbvpc"
+  await page.waitForSelector(clickButton);
+  await page.click(clickButton);
+  await page.waitForSelector("#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-8atqhb > form > div > div.MuiInput-root > input")
   await page.type("#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-8atqhb > form > div > div.MuiInput-root > input", email);
   await page.click("#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-8atqhb > div.css-aiv1y0 > button");
   
