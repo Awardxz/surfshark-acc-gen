@@ -8,12 +8,10 @@
 
 This project generates a Temporary SurfShark account using Puppeteer to automate user interactions.
 
-<<<<<<< HEAD
+
 ## as of 23/08/2024 , this project is still working
-=======
+
 ## as of 27/06/2024 , this project is still working
-## as of 11/07/2024 , this project is still working
->>>>>>> 8c59e3970cd488f8551ec5f3cbccbece22619450
 
 ## Features
 
