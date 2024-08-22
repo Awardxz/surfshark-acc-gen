@@ -34,7 +34,7 @@ puppeteer.use(StealthPlugin());
   await page.type(".YoSuD.Zswp6", email);
   console.log("Email Typed");
 
-  const searchResultSelector = "div[data-test='provider-crypto']";
+  const searchResultSelector = "div[data-test='provider-CoinGate']";
   await page.waitForSelector(searchResultSelector);
   await page.click(searchResultSelector);
   
