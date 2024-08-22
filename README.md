@@ -8,7 +8,12 @@
 
 This project generates a Temporary SurfShark account using Puppeteer to automate user interactions.
 
+<<<<<<< HEAD
 ## as of 23/08/2024 , this project is still working
+=======
+## as of 27/06/2024 , this project is still working
+## as of 11/07/2024 , this project is still working
+>>>>>>> 8c59e3970cd488f8551ec5f3cbccbece22619450
 
 ## Features
 
@@ -53,7 +58,7 @@ This project generates a Temporary SurfShark account using Puppeteer to automate
 
 ## Example Output
 
-![Example Output](https://raw.githubusercontent.com/Awardxz/surfshark-acc-gen/main/images-example/example.png?token=GHSAT0AAAAAACMF2E7TUTJFPCKUJ4DMFXNAZS3CJLQ)
+![Example Output](https://raw.githubusercontent.com/Awardxz/surfshark-acc-gen/main/images-example/example.png?token=GHSAT0AAAAAACMF2E7SEJMICO4TSON37F72ZUPZZGQ)
 
 ## Contributing
 
