@@ -57,7 +57,7 @@ puppeteer.use(StealthPlugin());
   await page.click(finishPayment);
   
   console.log("Finishing Payment");
-  const clickButton = "#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-1h7rhxr.e1sjwxkc4 > div > div.css-8o7dtg.e1sjwxkc2 > div > button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.e10oj9ve5.css-kdbvpc"
+  const clickButton = "#__next div.e1l050wb1.MuiBox-root.css-1ihl2ke div.MuiContainer-root.MuiContainer-maxWidthLg.e1l050wb0.css-118jj8p div.css-10h2p0h.e1wz9m0w0 div.css-1h7rhxr.e1sjwxkc4 div.css-2v2txs.e1sjwxkc3 div.css-8o7dtg.e1sjwxkc2 div button.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.MuiButtonBase-root.e10oj9ve5.css-1vp1s1k"
   await page.waitForSelector(clickButton);
   await page.click(clickButton);
   await page.waitForSelector("#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-8atqhb > form > div > div.MuiInput-root > input")
