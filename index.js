@@ -44,11 +44,7 @@ puppeteer.use(StealthPlugin());
   await page.waitForSelector(payment);
   await page.click(payment);
   
-  console.log("Selecting Payment");
 
-  const cryptoPayment = ".e7kd91g0 > label:nth-child(1) > span:nth-child(2) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)";
-  await page.waitForSelector(cryptoPayment);
-  await page.click(cryptoPayment);
   
   console.log("Selecting Bitcoin");
   
