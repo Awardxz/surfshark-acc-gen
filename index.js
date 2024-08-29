@@ -4,7 +4,8 @@ const puppeteer = require('puppeteer-extra')
 const StealthPlugin = require('puppeteer-extra-plugin-stealth')
 puppeteer.use(StealthPlugin());
 
-(async () => {
+async function getEmail() {
+
   const password = "WaledGamer123!";
 
   const browser = await puppeteer.launch({ headless: 'new' });
@@ -112,4 +113,12 @@ setTimeout(() => {
 console.clear();
 console.log(`Email: ${email}`);
 console.log(`Password: ${password}`)
-})();
+let obj = {
+  email : email,
+  password : password
+}
+return obj
+}
+
+module.exports = {getEmail}
+
