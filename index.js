@@ -7,7 +7,7 @@ puppeteer.use(StealthPlugin());
 (async () => {
   const password = "WaledGamer123!";
 
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: 'new' });
   const emailPage = await browser.newPage();
   const customUA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36';
  
@@ -16,7 +16,7 @@ puppeteer.use(StealthPlugin());
   
   await emailPage.goto("https://temp-mail.io/en");
   
-  await emailPage.waitForSelector("div#__layout div.wrapper header.header div.email div.email__wrapper div.email__input-wrapper input#email.email__input");
+  await emailPage.waitForSelector(".email__input");
   
   const email = await emailPage.evaluate(() => {
       let inputElement = document.querySelector('#email');
@@ -34,7 +34,7 @@ puppeteer.use(StealthPlugin());
   await page.type(".YoSuD.Zswp6", email);
   console.log("Email Typed");
 
-  const searchResultSelector = "div[data-test='provider-list'] div[data-test='provider-CoinGate'] .dLHz4";
+  const searchResultSelector = "div.lLyrv > div.bj21b > div > div.Ewm0n > div.XgKPH > div.dFvXQ > div.KolGQ > div > div:nth-child(5)";
   await page.waitForSelector(searchResultSelector);
   await page.click(searchResultSelector);
   await page.click(searchResultSelector);
