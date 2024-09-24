@@ -4,6 +4,10 @@ const puppeteer = require('puppeteer-extra')
 const StealthPlugin = require('puppeteer-extra-plugin-stealth')
 puppeteer.use(StealthPlugin());
 
+ function delay(params) {
+  return new Promise(resolve => setTimeout(resolve , params))
+}
+
 (async () => {
   const password = "WaledGamer123!";
 
@@ -17,11 +21,13 @@ puppeteer.use(StealthPlugin());
   await emailPage.goto("https://temp-mail.io/en");
   
   await emailPage.waitForSelector(".email__input");
+  await delay(150)
   
   const email = await emailPage.evaluate(() => {
       let inputElement = document.querySelector('#email');
       return inputElement.getAttribute('title');
   });
+
   console.log(email);
   
   const page = await browser.newPage();
