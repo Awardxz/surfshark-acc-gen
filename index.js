@@ -11,7 +11,7 @@ puppeteer.use(StealthPlugin());
 (async () => {
   const password = "WaledGamer123!";
 
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await puppeteer.launch({ headless: false});
   const emailPage = await browser.newPage();
   const customUA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36';
  
@@ -50,21 +50,7 @@ puppeteer.use(StealthPlugin());
   const payment = "div.lLyrv > div.bj21b > div > div.Ewm0n > div.XgKPH > div.dFvXQ > div.KolGQ > div > div.wT2mk.tOuu9 > div.Wfune.tOuu9 > div > div.g2nAY > button";
   await page.waitForSelector(payment);
   await page.click(payment);
-  
-  console.log("Selecting Bitcoin");
-  
-  const finishPayment = "label[data-test='Bitcoin-currency']";
-  await page.waitForSelector(finishPayment);
-  await page.click(finishPayment);
-  
-  console.log("Finishing Payment");
-  const clickButton = "#__next div.e1l050wb1.MuiBox-root.css-1ihl2ke div.MuiContainer-root.MuiContainer-maxWidthLg.e1l050wb0.css-118jj8p div.css-10h2p0h.e1wz9m0w0 div.css-1h7rhxr.e1sjwxkc4 div.css-2v2txs.e1sjwxkc3 div.css-8o7dtg.e1sjwxkc2 div button.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.MuiButtonBase-root.e10oj9ve5.css-1vp1s1k"
-  await page.waitForSelector(clickButton);
-  await page.click(clickButton);
-  await page.waitForSelector("#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-8atqhb > form > div > div.MuiInput-root > input")
-  await page.type("#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-8atqhb > form > div > div.MuiInput-root > input", email);
-  await page.click("#__next > div > div > div.css-10h2p0h.e1wz9m0w0 > div.css-8atqhb > div.css-aiv1y0 > button");
-  
+
   console.log("Completed Payment");
   
   const passwordPage = await browser.newPage();
