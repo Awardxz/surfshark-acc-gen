@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/Awardxz/waledFPS/main/waled.ico?token=GHSAT0AAAAAACMF2E7TWT3GAWEVLHUAEAMIZR6WXRA" width="190">
-  <h1>SurfShark Account Generator</h1>
+  <h1>SurfShark Account Generator V2</h1>
 </div>
 
 
