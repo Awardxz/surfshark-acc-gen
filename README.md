@@ -6,13 +6,13 @@
 
 [![Supported by Award](https://img.shields.io/badge/Supported%20by-Award-blue)](https://github.com/Awardxz)
 
-This project generates a Temporary SurfShark account using Puppeteer to automate user interactions.
+This project generates a Temporary SurfShark account using Puppeteer to automate user interactions.(V1)
+SurfShark V3 uses API Requests , creating a account under 4 seconds fully functional.
 
-
-## as of 3/10/2024  , this project is still THRIVING
-## as of 28/8/2024  , this project is still working
-## as of 23/08/2024 , this project is still working
-
+## as of 5/10/2024, this project has been patched.
+## as of 3/10/2024, this project is still THRIVING.
+## as of 28/8/2024, this project is still working.
+## as of 23/08/2024,this project is still working.
 ## as of 27/06/2024 , this project is still working
 
 ## Features
@@ -24,7 +24,8 @@ This project generates a Temporary SurfShark account using Puppeteer to automate
 
 - Node.js installed
 - npm (Node Package Manager) installed
-- Puppeteer
+- Puppeteer (V1-V2)
+- V3 (Axios , Cheerio)
 
 ## Installation
 
