@@ -20,7 +20,7 @@ async function createEmail(email) {
     console.log("Email Created");
     console.log(JSON.stringify(response.data));
   } catch (error) {
-    console.error(error); // Use `console.error` for logging errors
+    console.error(error); 
   }
 }
 

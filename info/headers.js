@@ -43,5 +43,25 @@ const headers1 = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
   };
 
+const headers2 ={ 
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0', 
+  'Accept': '*/*', 
+  'Accept-Language': 'en-US,en;q=0.5', 
+  'Accept-Encoding': 'gzip, deflate, br, zstd', 
+  'Referer': 'https://my.surfy-chinaz.com/auth/change?token=ZV2N252TwzvuxN2kNzMe5WEv', 
+  'Content-Type': 'application/json', 
+  'Origin': 'https://my.surfy-chinaz.com', 
+  'DNT': '1', 
+  'Sec-GPC': '1', 
+  'Connection': 'keep-alive', 
+  'Cookie': 'surfshark-uuid=e8b3961b-d4ae-4e0f-84a6-8640e61da38c; surfshark-locale=en; __cflb=0H28ux8JvnTEfjEb2V4LQt5btFkNytGhVZZb61WjCuJ; __cf_bm=mJlZWSJgXyCw15g44TJwz9DbxafYBCPpD6mSC.qCU7k-1728133323-1.0.1.1-jX1nhJ0Vacghy3znxCFO584OXQJg_RlquEA82xOLBJUn8NnT148TgSZxZgLnPQq4y2dwq8w1s5v97uKJCN1syg; cf_clearance=ISEEHA39hDfjWns1LgJpc0Mga0CiNKREws2Mxi7IYxU-1728133323-1.2.1.1-l5Dr20UE8iyoTjCODRGMw7ARI28XDx5aeVwzRu995tIQznVAHkZKFVU8nbSJQIEvzJZnGaA9U88EYYmJKf9UFpL8NcDGAEU_wkB.a.udoSsezVu5ZxSIt8MIxHhChIG2qxgludJtImPsl3GnhHDlh0b7.ngqtAyz91Cv0jKI4Oy8uO5LwqFLlPaxZl9rSLJmjimV5eqvjRjZb8LNoZQ.vUjhHQYPLziwI6rg18jK7MapULccZWmgioXVFfnUxqvEspAWnWeHvmFQ71CXIcYWeJnsZWt2otavlykFeZpT1eg3Z_NA5gYDCRA_8hd.U8GOOewpoIbpD2Mc3QDSOvXDyg', 
+  'Sec-Fetch-Dest': 'empty', 
+  'Sec-Fetch-Mode': 'cors', 
+  'Sec-Fetch-Site': 'same-origin', 
+  'Priority': 'u=0', 
+  'TE': 'trailers'
+}
+
 module.exports = headers;
 module.exports = headers1;
+module.exports = headers2;
