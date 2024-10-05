@@ -75,10 +75,6 @@ Contributions are welcome! Please fork this repository and submit a pull request
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
-
-- [Puppeteer](https://github.com/puppeteer/puppeteer) - Headless Chrome Node.js API
-
 ## Contact
 
 For any issues or inquiries, please open an issue in the repository or contact the maintainer.
