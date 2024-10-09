@@ -7,7 +7,7 @@ const axios = require('axios');
 const { getRandomEmail } = require("./components/getRandomString");
 const { createEmail } = require("./components/createEmail");
 const { resetPassword } = require("./components/resetPassword");
-const { fetchFinalUrl, extractToken } = require("./components/fetchFinalUrl");
+const { fetchFinalUrl } = require("./components/fetchFinalUrl");
 const { changePassword } = require("./components/changePassword");
 
 async function createEmailStart() {
